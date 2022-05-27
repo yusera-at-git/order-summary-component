@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.bg__img {
+  background: url("./images/pattern-background-mobile.svg") no-repeat
+    center/cover;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+body {
+  font-size: 16px;
+  text-align: center;
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.card {
+  background-color: white;
+  margin: 60px 25px;
+  border-radius: 20px;
+  padding: 0 0px 10px;
+  overflow: hidden;
+}
+.order {
+  padding: 1.2em 1.2em;
+}
+.order-summary-heading {
+  font-weight: 900;
+  font-size: 1.4em;
+  padding: 0px 0px 10px;
+  color: hsla(223, 47%, 23%, 0.863);
+}
+.summary {
+  color: hsl(224, 23%, 55%);
+  line-height: 1.5;
+  font-weight: 700;
+  text-align: center;
+}
+.order-plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1.2em;
+  background-color: hsl(225, 100%, 98%);
+  padding: 15px;
+  border-radius: 10px;
+}
+.icon-music {
+  width: 3em;
+  padding-right: 0;
+}
+.plan-details {
+  line-height: 1.5;
+  padding: 0px 15px;
+}
+.plan-name {
+  font-weight: 900;
+  color: hsla(223, 47%, 23%, 0.863);
+}
+.plan-price {
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+}
+.change-plan {
+  flex: 2;
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  transition: 0.2s;
+  text-decoration: underline;
+}
+.proceed {
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  height: 3.5em;
+  border: none;
+  width: 88%;
+  background-color: hsl(245, 75%, 52%);
+  font-weight: 900;
+  color: white;
+  font-size: 0.9em;
+  transition: 0.2s;
+}
+.cancel-order {
+  display: block;
+  font-size: 0.9em;
+  font-weight: 900;
+  border: none;
+  color: hsl(224, 23%, 55%);
+  margin: 10px auto;
+  padding: 10px;
+  background-color: transparent;
+  transition: 0.2s;
+}
+
+@media (min-width: 700px) {
+  .bg__img {
+    background: url("./images/pattern-background-desktop.svg") no-repeat
+      center/cover;
+    top: -40%;
+    height: 100%;
+  }
+  .card {
+    width: 400px;
+    margin: 100px auto;
+  }
+  .cancel-order:hover {
+    color: hsla(223, 47%, 23%, 0.863);
+    cursor: pointer;
+  }
+  .change-plan:hover {
+    color: hsl(245, 50%, 57%);
+    cursor: pointer;
+  }
+  .proceed:hover {
+    background-color: hsl(245, 50%, 57%);
+    box-shadow: 0px 4px 12px hsl(245, 50%, 57%);
+    cursor: pointer;
+  }
+}
