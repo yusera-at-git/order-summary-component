@@ -117,8 +117,8 @@ body {
 @media (min-width: 700px) {
   .bg__img {
     background: url("./images/pattern-background-desktop.svg") no-repeat
-      center/cover;
-    top: -40%;
+      center/contain;
+    top: -30%;
     height: 100%;
   }
   .card {
